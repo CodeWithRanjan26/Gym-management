@@ -1,0 +1,66 @@
+.attendance-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.right-section {
+  flex: 1;
+  background: #fffef8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.log-list {
+  max-height: 300px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+}
+
+.log-entry {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.analysis-card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: #f6f6ff;
+}

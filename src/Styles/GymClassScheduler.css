@@ -1,0 +1,67 @@
+.scheduler-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f8fa;
+  border-radius: 10px;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+.form-section, .filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-section input,
+.form-section select,
+.filter-section select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  flex: 1 1 200px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.class-list {
+  display: grid;
+  gap: 15px;
+}
+
+.class-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.class-card h4 {
+  margin: 0 0 5px;
+  color: #444;
+}
+
+.class-card button {
+  background-color: crimson;
+  margin-top: 10px;
+}

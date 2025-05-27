@@ -1,0 +1,235 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: hsl(0, 36%, 96%);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #0a5c6e;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li:hover {
+  color: #ff5733;
+}
+
+/* Header Section */
+header {
+  background-color: #1a8198;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  border-bottom: 2px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Home Section */
+.home-container {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #0d0000;
+}
+
+.welcome-banner {
+  position: relative;
+  background-image: url('gym-bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.gym-logo {
+  width: 100px;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.welcome-banner h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+  animation: slideDown 1s ease-out;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 20px 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+  background-color: #e64a19;
+}
+
+/* Cards & Sections */
+.container,
+.stats-container,
+.trainer-container,
+.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.card,
+.event-card,
+.testimonial-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover,
+.event-card:hover,
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.card h2,
+.event-card h2,
+.testimonial-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.card p,
+.event-card p,
+.testimonial-card p {
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #0f9145;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0f4197;
+}
+
+.call-to-action button {
+  font-size: 1.5rem;
+  padding: 12px 28px;
+  background-color: #1f5f0c;
+}
+
+.call-to-action button:hover {
+  background-color: #0c7666;
+}
+
+/* Footer */
+.footer {
+  background-color: #f1eeee;
+  color: rgb(14, 14, 14);
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: rgb(71, 5, 5);
+  margin: 0 10px;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #ff5733;
+}
+
+/* Animations */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

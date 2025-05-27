@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.app {
+  background-image: url('/public/image/gym-bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
