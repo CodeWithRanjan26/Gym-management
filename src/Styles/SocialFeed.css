@@ -1,0 +1,25 @@
+/* Container stays at fixed height; only the <p> inside fades in/out */
+.social-feed {
+  position: relative;
+  height: 2.2rem;          /* One text line */
+  overflow: hidden;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+/* Fade-up animation */
+.social-line {
+  animation: fadeSlide 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

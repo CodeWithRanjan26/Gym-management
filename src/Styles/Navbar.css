@@ -75,9 +75,9 @@ body {
 
 
 /* Responsive Adjustments */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .sidebar {
-    width: 80%;
+    width: -80%;
     max-width: 300px;
   }
 
@@ -91,4 +91,4 @@ body {
   .sidebar {
     width: 100%;
   }
-} */
+}

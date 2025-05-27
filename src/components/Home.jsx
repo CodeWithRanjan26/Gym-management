@@ -1,8 +1,9 @@
 import React from "react";
+import SocialFeed from "./SocialFeed";
 import "../Styles/Home.css";
 
 
-const Home = () => {
+const Home = ({ setActiveSection }) => {
   return (
     <div className="home-container">
 
@@ -12,7 +13,9 @@ const Home = () => {
         <div className="content">
           <h1>Welcome to FitFlex Gym</h1>
           <p className="quote">"Push harder than yesterday if you want a different tomorrow."</p>
-          <button className="cta-button">Join Now</button>
+          <button className="cta-button" onClick={() => setActiveSection("registration")}>
+            Join Now
+          </button>
         </div>
       </section>
 
@@ -61,20 +64,24 @@ const Home = () => {
         <h2>Meet Our Trainers</h2>
         <div className="trainer-grid">
           <div className="trainer-card">
-            <h3>Alex</h3>
+            <h3>Vishal</h3>
             <p>Cardio Specialist</p>
             <button>Book Session</button>
+            <p className="coming-soon">🚀 Book Session Coming Soon!</p>
           </div>
           <div className="trainer-card">
-            <h3>Mia</h3>
+            <h3>Prince</h3>
             <p>Strength Coach</p>
             <button>Book Session</button>
+            <p className="coming-soon">🚀 Book Session Coming Soon!</p>
           </div>
           <div className="trainer-card">
             <h3>Raj</h3>
             <p>HIIT Trainer</p>
             <button>Book Session</button>
+            <p className="coming-soon">🚀Book Session Coming Soon!</p>
           </div>
+
         </div>
       </section>
 
@@ -92,16 +99,19 @@ const Home = () => {
             <h3>Basic</h3>
             <p>Access to gym floor</p>
             <button>Subscribe</button>
+            <p className="coming-soon">🚀 Subscription Coming Soon!</p>
           </div>
           <div className="plan-card">
             <h3>Premium</h3>
             <p>Gym + Classes</p>
             <button>Subscribe</button>
+            <p className="coming-soon">🚀 Subscription Coming Soon!</p>
           </div>
           <div className="plan-card">
             <h3>Elite</h3>
             <p>All Access + Personal Trainer</p>
             <button>Subscribe</button>
+            <p className="coming-soon">🚀 Subscription Coming Soon!</p>
           </div>
         </div>
       </section>
@@ -118,16 +128,16 @@ const Home = () => {
       {/* Social Feed */}
       <section className="section">
         <h2>From Our Socials</h2>
-        <div className="social-feed">
-          <p>@fitflex: Join the #30DayChallenge 💪</p>
-          <p>@fitflex: New HIIT class at 6PM!</p>
-        </div>
+        <SocialFeed />
       </section>
+
 
       {/* Final Call-to-Action */}
       <section className="section text-center">
         <h2>Ready to Transform?</h2>
-        <button className="final-cta">Become a Member</button>
+        <button className="final-cta" onClick={() => setActiveSection("registration")}>
+          Become a Member
+        </button>
       </section>
     </div>
   );

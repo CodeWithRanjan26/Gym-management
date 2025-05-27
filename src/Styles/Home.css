@@ -3,9 +3,7 @@
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  overflow-y: auto;
   background-color: #f0f2f5;
-  padding-bottom: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -29,7 +27,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker for better text visibility */
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .content {
@@ -52,7 +50,8 @@
   color: #f0f0f0;
 }
 
-.cta-button {
+.cta-button,
+.final-cta {
   background-color: #ff5a5f;
   color: #fff;
   border: none;
@@ -60,14 +59,16 @@
   font-size: 1rem;
   border-radius: 25px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.cta-button:hover {
+.cta-button:hover,
+.final-cta:hover {
   background-color: #e84950;
+  transform: scale(1.05);
 }
 
-/* Sections */
+/* Reusable Section Styling */
 .section {
   padding: 3rem 2rem;
   background-color: #fff;
@@ -86,7 +87,7 @@
 }
 
 .stat-card {
-  background-color: #fafafa;
+  background-color: #79eae1;
   padding: 1.5rem;
   border-radius: 10px;
   text-align: center;
@@ -94,7 +95,7 @@
 }
 
 .stat-card h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -142,7 +143,7 @@
 }
 
 .trainer-card {
-  background-color: #f9f9f9;
+  background-color: #79eae1;
   padding: 1.5rem;
   border-radius: 10px;
   text-align: center;
@@ -151,7 +152,7 @@
 
 .trainer-card button {
   margin-top: 1rem;
-  background-color: #007bff;
+  background-color: #ff0019;
   color: white;
   border: none;
   padding: 0.6rem 1.2rem;
@@ -187,7 +188,7 @@
   flex: 1;
   min-width: 220px;
   max-width: 300px;
-  background-color: #f0f8ff;
+  background-color: #79eae1;
   padding: 1.5rem;
   border-radius: 10px;
   text-align: center;
@@ -229,29 +230,12 @@
   margin-bottom: 0.5rem;
 }
 
-/* Final CTA */
+/* Final CTA Section */
 .text-center {
   text-align: center;
 }
 
-.final-cta {
-  margin-top: 2rem;
-  background-color: #ff5722;
-  color: #fff;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 30px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.final-cta:hover {
-  transform: scale(1.05);
-  background-color: #e64a19;
-}
-
-/* Responsive Typography */
+/* Responsive Breakpoints */
 @media screen and (max-width: 768px) {
   .content h1 {
     font-size: 2rem;
@@ -264,4 +248,17 @@
   .section {
     padding: 2rem 1rem;
   }
+
+  .stat-grid,
+  .trainer-grid,
+  .plan-grid {
+    grid-template-columns: 1fr !important;
+    flex-direction: column;
+  }
+}
+
+.coming-soon {
+  margin-top: 50px;
+  color: #b80f0f;
+  font-style: italic;
 }
