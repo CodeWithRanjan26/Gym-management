@@ -62,5 +62,6 @@ button:hover {
   padding: 12px;
   margin-bottom: 15px;
   border-radius: 8px;
-  background: #f6f6ff;
+  background: #61eade;
+  color: black;
 }
